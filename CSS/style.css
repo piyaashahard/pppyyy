@@ -1,0 +1,292 @@
+
+/* COMMON CSS*/
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --fontFamily: "Poppins", sans-serif;
+    --secondFamily: "PT Sans", sans-serif;
+    --primaryColor:#FFCC00;
+    --secondaryColor:#353535;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1106px;
+    margin:auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ol, ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: var(--fontFamily)
+}
+.align-center{
+    align-items: center;
+}
+.btn{
+    margin-top: 40px;
+    border-radius: 20px;
+    padding: 22px 45px;
+    display: inline-block;
+    background-color: var(--primaryColor);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    border: 1px solid transparent;
+
+}
+
+.btn.outline{
+    margin-left: 30px;
+    background-color: transparent;
+    color: var(--secondaryColor);
+    border: 1px solid var(--secondaryColor);
+}
+
+/* COMMON CSS ENDS */
+
+/* NAV STARTS */
+nav .logo{
+    width:30%;
+}
+nav .menu{
+    width:70%;
+    text-align:right;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 200%;
+    color: var(--secondaryColor);
+    padding: 18px 22px 5px;
+    display: inline-block;
+    position: relative;
+
+}
+
+nav .menu ul li a:hover::after{
+    content:'';
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondaryColor);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+ 
+
+
+
+/* NAV ENDS */
+
+/* HERO SECTION */
+
+#hero{
+    margin-top: 56px;
+}
+#hero .herotext, .heroimage{
+    width: 50%;
+}
+#hero .herotext h4{
+    font-weight: 400;
+    font-size: 24px;
+    color:var(--secondaryColor);
+}
+#hero .herotext h1{
+    font-family: var(--secondFamily);
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--secondaryColor);
+    margin: 15px 0 25px;
+}
+#hero .herotext p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    color: var(--secondaryColor);
+}
+#hero .follow img{
+    padding-left: 30px ;
+}
+
+#hero .mouse-icon{
+    padding: 30px;
+    padding-bottom: 100px;
+    text-align: center;
+
+}
+
+
+/* HERO SECTION ENDS */
+
+/* BANNER STARTS */
+#banner {
+    background-image: url(../images/Rectangle\ 49.png);
+    background-size:cover;
+    background-position: center;
+}
+#banner .about h2{
+    margin-left: 30px;
+    font-size: 40px;
+    font-weight: 200px;
+}
+#banner .about p{
+    padding: 30px;
+    line-height: 30px;    
+}
+#banner .half_circle{
+    margin-top: -130px;
+    margin-left: 900px;
+    margin-bottom: -33px;
+}
+.image{
+    margin-bottom: -7px;
+}
+/* BANNER ENDS */
+
+
+/* CART SECTION */
+
+#cart {
+    padding-top: 150px;
+}
+
+#cart .cart1, .cart2, .cart3{
+    box-shadow: 0px 10px 20px 10px #eeeded;
+    margin:auto;
+    width: 30%;
+    border-radius: 20px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-left: 1px;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.cart1 p, .cart2 p, .cart3 p, .cart1 h1, .cart2 h1, .cart3 h1{
+    margin-top: 22px;
+}
+.cart1 p, .cart2 p, .cart3 p{
+    color: #484747;
+}
+#cart .cart1:hover, #cart .cart2:hover, #cart .cart3:hover{
+    box-shadow: 0px 10px 20px 10px #FFCC00;
+}
+/* CART SECTION ENDS */
+
+
+/* BRANDING PART STARTS */
+
+#brand {
+    padding-top: 150px;
+    width: 100%;
+}
+#brand .container{
+    padding-top: 25px;
+    background-image: url(../images/Rectangle\ 49.png); 
+    border-radius: 20px;  
+}
+#brand .row .view{
+    margin-left: 80px;
+}
+#brand img{
+    margin-bottom: -7px;
+}
+#brand .view h1{
+    margin-left: 30px;
+}
+
+#brand .view p{
+    padding-top: 40px;
+    line-height: 30px;
+    margin-left: 30px;
+}
+#brand .row .view .btn.outline{
+    padding: 17px 30px;
+}
+
+/* BRANDING PART ENDS */
+
+/* HELP SECTION STARS */
+
+  #help{
+    padding-top: 150px;
+    
+  }
+  #help .text{
+    text-align: right;
+    margin-left: 200px;
+    font-family: var(--fontFamily);
+    font-size: 20px;
+    line-height: 38px;
+
+  }
+  #help .text h1{
+    font-family:var(--secondFamily) ;
+    font-weight: 600;
+    font-size: 50px;
+    padding-bottom: 30px;
+  }
+  #help .text  h4{
+    padding-top: 30px;
+    font-family: var(--secondFamily);
+    font-weight: 600;
+    font-size: 40px;
+    margin-left: 20px;
+    
+  }
+  #help .text .row p{
+    padding-top: 80px;
+  }
+
+  #help .row{
+    margin-top: 22px;
+    margin:auto;
+    border-radius: 20px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-left: 1px;
+    text-align: center;
+    transition: all 0.5s;
+    
+  }
+
+ #help .menu2 .row{
+     box-shadow: 0px 2px 2px 2px #eeeded;
+     width: 350px;
+     margin-bottom: 10px;
+ }
+ #help .menu2 .row h3{
+    margin-left: 30px;
+ }
+ #help .menu2 .row:hover{
+    cursor: pointer;
+    box-shadow: 0px 10px 20px 10px #d4ae1a;
+}
+#help .menu2 .row img{
+    margin-left: 25px;
+}
+
+
+
+/* HELP SECTION ENDS */
+
+
